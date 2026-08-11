@@ -293,6 +293,7 @@ console.log("Name:", profile.name);
 console.log("Second Hobby:", profile.hobbies[1]);
 console.log("Age:", profile.age);
 
+<<<<<<< HEAD
 
 
 
@@ -553,3 +554,5 @@ switch (trafficLight) {
     default:
         console.log("Invalid traffic light");
 }
+=======
+>>>>>>> 1abe79e2f73a095ab7e35c9055e715023854d307
