@@ -293,3 +293,263 @@ console.log("Name:", profile.name);
 console.log("Second Hobby:", profile.hobbies[1]);
 console.log("Age:", profile.age);
 
+
+
+
+
+//   DAY 2 TASKS
+
+
+
+// student details : 1
+
+
+var studentName1 = "maddy";
+let age1 = 26;
+const course = "Js";
+let mark = 85;
+
+console.log("Student Name:", studentName);
+console.log("Age:", age);
+console.log("Course:", course);
+console.log("Mark:", mark);
+
+
+
+// Get user input : 2
+
+let name1n = prompt("Enter your name:");
+let userAge = prompt("Enter your age:");
+
+console.log("Name:", name);
+
+alert("Your age is: " + userAge);
+
+
+// data types : 3
+
+
+
+let myString = "Manojkumar";
+
+let myNumber = 85;
+
+let myBoolean = true;
+
+let myUndefined;
+
+let myNull = null;
+
+console.log(myString, typeof myString);
+console.log(myNumber, typeof myNumber);
+console.log(myBoolean, typeof myBoolean);
+console.log(myUndefined, typeof myUndefined);
+console.log(myNull, typeof myNull);
+
+
+
+// array shoping list : 4
+
+
+let shoppingList = [
+    "Shirt",
+    "Pant",
+    "Shoes",
+    "Watch",
+    "Bag",
+    "Cap"
+];
+
+console.log("First product:", shoppingList[0]);
+
+console.log("Third product:", shoppingList[2]);
+
+console.log("Last product:", shoppingList[shoppingList.length - 1]);
+
+console.log("Complete array:", shoppingList);
+
+
+
+// Employee Object : 5
+
+let employee1 = {
+    name: "Manojkumar",
+    age: 26,
+    role: "Developer",
+    salary: 45000
+};
+
+console.log("Name:", employee.name);
+console.log("Age:", employee1.age);
+console.log("role:", employee1.role);
+console.log("Salary:", employee1.salary);
+
+
+// Bill Calculator : 6 
+
+let productPrice = 500;
+
+let quantity = 3;
+
+let totalPrice = productPrice * quantity;
+
+let discount = 100;
+
+let finalAmount = totalPrice - discount;
+
+console.log("Total Price:", totalPrice);
+console.log("Discount:", discount);
+console.log("Final Amount:", finalAmount);
+
+
+
+// comparison operators : 7
+
+console.log(25 > 20);          // true
+
+console.log(15 < 10);         // fales
+
+console.log(50 == "50");     // true
+
+console.log(50 === "50");   // fales
+
+console.log(100 != "100");  //fales
+
+console.log(100 !== "100"); //true
+
+
+
+// logical operators : 8
+
+
+console.log(10 > 5 && 20 > 15 || 5 > 10);      // true
+
+console.log(10 < 5 || 20 >= 20 && 5 == "5");   // true
+
+console.log(15 === "15" || 10 > 5 && 8 < 3);    // fales
+
+console.log(20 >= 20 && 5 !== "5" || 10 < 5);   // true
+
+console.log(25 < 20 || 30 == "30" && 10 >= 10);  // true
+
+
+// ternary operator - login : 9
+
+
+let passwordCorrect = true;
+
+let result = passwordCorrect
+    ? "Login successful"
+    : "Invalid password";
+
+console.log(result);
+
+console.log(
+    passwordCorrect ? "Login successful" : "Invalid password"
+);
+
+
+
+// type casting - marks : 10
+
+let mark3 = "80";
+let mark4 = "70";
+
+let num3 = Number(mark3);
+let num4 = Number(mark4);
+
+let total = num3 + num4;
+
+console.log("Total:", total);
+
+
+// voting eligibility : 11
+
+let age2 = 20;
+
+if (age2 >= 18) {
+    console.log("You can vote");
+} else {
+    console.log("You cannot vote");
+}
+
+
+// student grade :12
+
+
+let mark1 = 85;
+
+if (mark < 0 || mark > 100) {
+    console.log("Invalid Mark");
+} else if (mark1 >= 90) {
+    console.log("A Grade");
+} else if (mark1 >= 75) {
+    console.log("B Grade");
+} else if (mark1 >= 50) {
+    console.log("C Grade");
+} else {
+    console.log("Fail");
+}
+
+
+// time greeting : 13
+
+let time = 15;
+
+if (time >= 1 && time <= 6) {
+    console.log("Early Morning");
+} else if (time >= 7 && time <= 12) {
+    console.log("Good Morning");
+} else if (time >= 13 && time <= 15) {
+    console.log("Good Afternoon");
+} else if (time >= 16 && time <= 19) {
+    console.log("Good Evening");
+} else if (time >= 20 && time <= 24) {
+    console.log("Good Night");
+} else {
+    console.log("Invalid Time");
+}
+
+
+// nested if -job eligibility : 14 
+
+let age3 = 26;
+let height = 175;
+let weight = 95;
+
+if (age3 >= 26) {
+    if (height >= 170) {
+        if (weight >= 95) {
+            console.log("Candidate is eligible");
+        } else {
+            console.log("Not eligible: Weight must be 95 kg or above");
+        }
+    } else {
+        console.log("Not eligible: Height must be 170 cm or above");
+    }
+} else {
+    console.log("Not eligible: Age3 must be 26 or above");
+}
+
+
+// switch - traffic light : 15 
+
+
+let trafficLight = "green";
+
+switch (trafficLight) {
+    case "red":
+        console.log("Stop the vehicle");
+        break;
+
+    case "yellow":
+        console.log("Get ready");
+        break;
+
+    case "green":
+        console.log("Go");
+        break;
+
+    default:
+        console.log("Invalid traffic light");
+}
