@@ -293,7 +293,6 @@ console.log("Name:", profile.name);
 console.log("Second Hobby:", profile.hobbies[1]);
 console.log("Age:", profile.age);
 
-<<<<<<< HEAD
 
 
 
@@ -554,5 +553,241 @@ switch (trafficLight) {
     default:
         console.log("Invalid traffic light");
 }
-=======
->>>>>>> 1abe79e2f73a095ab7e35c9055e715023854d307
+
+
+//  DAY - 3 TASK
+
+
+// employee eligibility : 1 
+
+
+let name5 = "Manoj";
+let age5 = 25;
+let experience = 2;
+let salary = 25000;
+
+if (age >= 21 && experience >= 1 && salary >= 20000) {
+    console.log("Employee is eligible");
+}
+else if (age < 21) {
+    console.log("Employee is not eligible because age is less than 21");
+}
+else if (experience < 1) {
+    console.log("Employee is not eligible because experience is less than 1 year");
+}
+else {
+    console.log("Employee is not eligible because salary is less than 20,000");
+}
+
+
+
+// ATM withdrawal : 2 
+
+let balance = 10000;
+
+let withdraw = 2500;
+
+if (withdraw <= 0) {
+    console.log("Invalid withdrawal amount");
+}
+else if (withdraw > balance) {
+    console.log("Insufficient balance");
+}
+else if (withdraw % 100 !== 0) {
+    console.log("Withdrawal amount should be a multiple of 100");
+}
+else {
+    balance = balance - withdraw;
+    console.log("Withdrawal successful");
+    console.log("Remaining balance: ₹" + balance);
+}
+
+
+
+// login system with 3 attempts : 3
+
+
+let correctUsername = "manoj";
+let correctPassword = "12345";
+
+let attempts = 0;
+
+while (attempts < 3) {
+
+    let username = prompt("Enter username:");
+    let password = prompt("Enter password:");
+
+    if (username === correctUsername && password === correctPassword) {
+        console.log("Login successful");
+        break;
+    } 
+    else {
+        attempts++;
+        console.log("Wrong username or password");
+
+        if (attempts === 3) {
+            console.log("Account locked");
+        }
+    }
+}
+
+
+
+
+// student grade system : 4 
+
+
+let math = 80;
+let english = 75;
+let science = 90;
+let social = 85;
+let computer = 95;
+
+let total1 = math + english + science + social + computer;
+let average = total1 / 5;
+
+let grade;
+
+if (average >= 90) {
+    grade = "A";
+}
+else if (average >= 80) {
+    grade = "B";
+}
+else if (average >= 70) {
+    grade = "C";
+}
+else if (average >= 60) {
+    grade = "D";
+}
+else {
+    grade = "F";
+}
+
+console.log("Math = " + math);
+console.log("English = " + english);
+console.log("Science = " + science);
+console.log("Social = " + social);
+console.log("Computer = " + computer);
+
+console.log("Total1 = " + total1);
+console.log("Average = " + average);
+console.log("Grade = " + grade);
+
+// number pattern : 5
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+
+let p = 5;
+
+while (p >= 1) {
+    console.log(p);
+    p--;
+}
+
+
+let l = 1;
+
+do {
+    console.log(l);
+    l++;
+} while (l <= 5);
+
+
+
+// shoping cart : 6 
+
+let products = ["Laptop", "Mouse", "Keyboard", "Monitor"];
+
+let prices = [50000, 1000, 2000, 15000];
+
+let total5 = 0;
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i] + " - ₹" + prices[i]);
+
+    total5 = total5 + prices[i];
+}
+
+console.log("Total5 = ₹" + total5);
+
+
+// employee object : 7
+
+let employee5 = {
+    name: "Arun",
+    empId: "STK-101",
+    role: "Software Engineer",
+    salary: 45000
+};
+
+for (let key in employee5) {
+    console.log(key + " : " + employee5[key]);
+}
+
+function calculateBonus() {
+    if (employee5.salary >= 40000) {
+        return 5000;
+    } else {
+        return 3000;
+    }
+}
+
+let bonus = calculateBonus();
+
+console.log("Bonus = " + bonus);
+
+
+// bank account function : 8
+
+let balance1 = 10000;
+
+function deposit(amount) {
+    balance1 = balance1 + amount;
+    console.log("Deposited: ₹" + amount);
+}
+
+function withdraw1(amount) {
+    balance1 = balance1 - amount;
+    console.log("Withdrawn1: ₹" + amount);
+}
+
+function checkBalance() {
+    console.log("Current Balance1: ₹" + balance1);
+}
+
+deposit(5000);
+withdraw1(2000);
+checkBalance();
+
+
+// call back calculation : 9
+ 
+
+function add(a, b) {
+    return a + b;
+}
+
+function sub(a, b) {
+    return a - b;
+}
+
+function mul(a, b) {
+    return a * b;
+}
+
+function div(a, b) {
+    return a / b;
+}
+
+function calculate(callback, a, b) {
+    console.log(callback(a, b));
+}
+
+calculate(add, 20, 10);
+calculate(sub, 20, 10);
+calculate(mul, 20, 10);
+calculate(div, 20, 10);
